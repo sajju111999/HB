@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Birds</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/877/877951.svg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Materialize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"
+        integrity="sha384-S+e0w/GqyDFzOU88KBBRbedIB4IMF55OzWmROqS6nlDcXlEaV8PcFi4DHZYfDk4Y" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navbar     -->
+    <section class="fnavbar">
+        <nav class="nav-fixed">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo font-style font-mont1" style="margin-left:20px; margin-right:20px;">
+                    <i class="fas fa-hamburger"></i> Hungry Birds</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#slide"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="#menu"><i class="fas fa-list-alt"></i> MENU</a></li>
+                    <li><a href="#about"><i class="fas fa-address-card"></i> ABOUT US</a></li>
+                    <li><a href="#" onclick="toggleModal()"><i class="fas fa-phone-alt"></i> CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#slide"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="#menu"><i class="fas fa-list-alt"></i> MENU</a></li>
+            <li><a href="#about"><i class="fas fa-address-card"></i> ABOUT US</a></li>
+            <li><a href="#" onclick="toggleModal()"><i class="fas fa-phone-alt"></i> CONTACT</a></li>
+        </ul>
+    </section>
+
+    <section class="infomodal">
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h4 class="font-mont1" id="info-modal-heading">Contact Us :</h4>
+                <p id="info-modal-content"><i class="fas fa-phone-alt"></i> +91987654321</p>
+                <p id="info-modal-content"><i class="fas fa-envelope-open-text"></i> Email : hungrybirds@gmail.com</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect btn-flat"><i class="fas fa-times"></i> Close</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="fslide" id="slide">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="imageS/title2.jpg" alt="title1" id="img1">
+                    <div class="caption center-align white-text">
+                        <h3 class="font-mont2">Hungry Birds - Delicious food</h3>
+                        <h5 class="font-mont2 light text-lighten-3">We serve the best food.The secret ingredient is
+                            always love.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title1.jpg" alt="title3" id="img1">
+                    <div class="caption center-align black-text">
+                        <h3 class="font-mont2 white-text shadow-effect">The fondest memories are made when gathered
+                            around the table</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/title3.jpg" alt="title2" id="img1">
+                    <div class="caption center-align black-text">
+                        <h3 class="font-mont2 white-text shadow-effect">We welcome your appetite.<br>Let our food
+                            satisfy your stomach.</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="desc">
+        <div class="head white center">
+            <h2 class="font-mont1 align-center" style="margin-top:50px; color: #27496d;">Hungry Bird -I'm Lovin 'It</h2>
+            <div class="row container center">
+                <div class="col l8 s12 alignment">
+                    Most people are looking for something different when they decide to dine out. A great restaurant
+                    promises to offer something that is not available elsewhere. Being different is a good thing and it
+                    is a quality to look out for when choosing a restaurant. If providing good food and service is all
+                    that a restaurant can offer, that is nothing new. If customers can get the same experience from
+                    dozens of other restaurants, they are bound to overlook the restaurant. A great restaurant will have
+                    one or several unique features that will stand out in the patrons mind and this creates a
+                    competitive advantage.
+                </div>
+                <div class="col l3 s12">
+                    <img src="images/dinner.png" styles="object-fit:contain" height="200" width="auto" alt="coffe-cup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="head white center">
+            <h2 class="font-mont1 align-center" style="margin-top:80px; color: #27496d;">Hungry Bird -Menu </h2>
+            <div class="row" style="padding-right: 50px; padding-left: 50px;">
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item1.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Burger<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Burger<i
+                                    class="material-icons right">close</i></span>
+                            <p>A hamburger is a sandwich consisting of one or more cooked patties of ground meat,
+                                usually beef, placed inside a sliced bread roll or bun. The patty may be pan fried,
+                                grilled, smoked or flame broiled.</p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item2.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Cappuccino<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Cappuccino<i
+                                    class="material-icons right">close</i></span>
+                            <p>A cappuccino is an espresso-based coffee drink that originated in Italy, and is
+                                traditionally prepared with steamed milk foam. Variations of the drink involve the use
+                                of cream instead of milk, and flavoring with cinnamon or chocolate powder.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item3.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Noodles<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Noodles<i
+                                    class="material-icons right">close</i></span>
+                            <p>Noodles are a type of food made from unleavened dough which is rolled flat and cut,
+                                stretched or extruded, into long strips or strings. Noodles can be refrigerated for
+                                short-term storage or dried and stored for future use. Noodles are usually cooked in
+                                boiling water, sometimes with cooking oil or salt added.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item4.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Biryani<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Biryani<i
+                                    class="material-icons right">close</i></span>
+                            <p>Biryani is a mixed rice dish with its origins among the Muslims of the Indian
+                                subcontinent. It can be compared to mixing a curry, later combining it with semi-cooked
+                                rice separately. This dish is especially popular throughout the Indian subcontinent, as
+                                well as among the diaspora from the region.Pizza </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item5.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Pizza<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Pizza<i
+                                    class="material-icons right">close</i></span>
+                            <p>Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base
+                                of leavened wheat-based dough topped with tomatoes, cheese, and often various other
+                                ingredients baked at a high temperature, traditionally in a wood-fired oven. A small
+                                pizza is sometimes called a pizzetta.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item6.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Pastry<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Pastry<i
+                                    class="material-icons right">close</i></span>
+                            <p>Pastry is a dough of flour, water and shortening that may be savoury or sweetened.
+                                Sweetened pastries are often described as bakers' confectionery. The word "pastries"
+                                suggests many kinds of baked products made from ingredients such as flour, sugar, milk,
+                                butter, shortening, baking powder, and eggs.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item7.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Pancake<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Pancake<i
+                                    class="material-icons right">close</i></span>
+                            <p>A pancake is a flat cake, often thin and round, prepared from a starch-based batter that
+                                may contain eggs, milk and butter and cooked on a hot surface such as a griddle or
+                                frying pan, often frying with oil or butter.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item8.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Sandwich<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Sandwich<i
+                                    class="material-icons right">close</i></span>
+                            <p>A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on
+                                or between slices of bread, or more generally any dish wherein bread serves as a
+                                container or wrapper for another food type.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item9.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Sandwich<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Sandwich<i
+                                    class="material-icons right">close</i></span>
+                            <p>A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on
+                                or between slices of bread, or more generally any dish wherein bread serves as a
+                                container or wrapper for another food type.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item10.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Milkshake<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Milkshake<i
+                                    class="material-icons right">close</i></span>
+                            <p>A milkshake, or simply shake, is a drink that is usually made by blending milk, ice
+                                cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate
+                                syrup, or fruit syrup into a thick, sweet, cold mixture.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item11.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Soft drink<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Soft drink<i
+                                    class="material-icons right">close</i></span>
+                            <p>A soft drink is a drink that usually contains carbonated water, a sweetener, and a
+                                natural or artificial flavoring. The sweetener may be a sugar, high-fructose corn syrup,
+                                fruit juice, a sugar substitute, or some combination of these.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m12 s12" style="padding:20px 5px;">
+                    <div class="card card-bg-grad">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/item12.JPG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 font-mont2"
+                                style="color: #dae1e7 !important;">Beer<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Beer<i
+                                    class="material-icons right">close</i></span>
+                            <p>Beer is one of the oldest and most widely consumed alcoholic drinks in the world, and the
+                                third most popular drink overall after water and tea. Beer is brewed from cereal
+                                grains—most commonly from malted barley, though wheat, maize, and rice are also used.
+                            </p>
+                            <a class="waves-effect waves-light btn cart-prop">ORDER <i
+                                    class="fas fa-cart-arrow-down"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fparallax">
+        <div class="parallax-container" style="margin-top: 80px ;">
+            <div class="parallax"><img src="images/parallax1.jpg"></div>
+        </div>
+    </section>
+
+    <section class="aboutus" id="about">
+        <div class="head center white" style="margin-top:50px ;">
+            <div class="row">
+                <h2 class="font-mont1" style="margin-bottom: 30px; color: #27496d;">About Us</h2>
+                <h5>We’re Passionate About Our Food.</h5>
+                <h6 class="grey-text text-darken-3 container">
+                    From making healthier additions to our Happy Meal®, to serving up fresh beef Quarter Pounder®
+                    burgers that are cooked when you order, we’re always finding ways to show our commitment to our
+                    customers and our food.
+                </h6>
+                <h5>Commitment to Quality.</h5>
+                <h6 class="grey-text text-darken-3 container">
+                    We're dedicated to improving the way we prepare our quality food and the ingredients that go into
+                    it.
+                </h6>
+                <h5>Our Food, Your Questions</h5>
+                <h6 class="grey-text text-darken-3 container">
+                    We're transparent about our food; so when you ask, we tell.
+                </h6>
+                <a href="#" class="waves-effect waves-light btn" style="background: #27496d; margin:40px;">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="ficon">
+        <div class="row center container">
+            <div class="col s12 l3" style="padding: 50px;">
+                <i class="fas fa-heart fa-4x" style="color:#035aa6;"></i>
+                <h5>Happy Meal® Nutrition</h5>
+
+            </div>
+            <div class="col s12 l3" style="padding: 50px;">
+                <i class="fas fa-smile-wink fa-4x" style="color:#035aa6;"></i>
+                <h5>Variety of Choices</h5>
+            </div>
+            <div class="col s12 l3" style="padding: 50px;">
+                <i class="fas fa-user-tie fa-4x" style="color:#035aa6;"></i>
+                <h5>Our Food Experts</h5>
+            </div>
+            <div class="col s12 l3" style="padding: 50px;">
+                <i class="fas fa-hamburger fa-4x" style="color:#035aa6;"></i>
+                <h5>Our Food Philosophy</h5>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="freview">
+        <div class="section card-bg-grad2 center">
+            <h3 class="header font-mont1" style="color: #27496d;">What our Customers say</h3>
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="images/testimonial1.png"></a>
+                <a class="carousel-item" href="#two!"><img src="images/testimonial2.png"></a>
+                <a class="carousel-item" href="#three!"><img src="images/testimonial3.png"></a>
+                <a class="carousel-item" href="#four!"><img src="images/testimonial4.png"></a>
+              </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="foot card-bg-grad" style="padding: 50px;">
+            <footer id="footer">
+                <a href="https://www.linkedin.com/in/sayed-sajid-ali/"><i class="social-media fab fa-linkedin fa-2x"
+                        style="color:#dae1e7"></i></i></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100004563371794"><i
+                        class="social-media fab fa-facebook-f fa-2x" style="color:#dae1e7"></i></i></a>
+                <a href="https://www.instagram.com/syed_sajidali_/"><i class="social-media fab fa-instagram fa-2x"
+                        style="color:#dae1e7"></i></i></i></a>
+                <a href="https://twitter.com/Sayed_Sajid_Ali"><i class="social-media fab fa-twitter fa-2x"
+                        style="color:#dae1e7"></i></i></i></a>
+
+
+                <p style="font-size:1.2rem; color: #dae1e7;"><i class="fas fa-copyright"></i> Copyright 2020 Hungry Birds <i class="fas fa-hamburger"></i><br><br>
+                    <i class="fas fa-code"></i> Webpage Designed by: Sayed Sajid Ali<br><br>
+                    <i class="fab fa-mix"></i> Made with: Materialize. <i class="fas fa-heart"></i>
+                </p>
+            </footer>
+        </div>
+    </section>
+
+
+</body>
+
+<!-- Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<!-- Materialize Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- custom js -->
+<script src="js/loader.js"></script>
+
+</html>
